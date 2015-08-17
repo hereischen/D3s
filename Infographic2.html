@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Infographic2</title>
+<!-- THE STYLES -->
+<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+<link rel="stylesheet" type="text/css" href="styles/nv.d3.css"/>
+<style>
+
+body {
+  overflow-y:scroll;
+}
+
+text {
+  font: 12px sans-serif;
+}
+
+.mypiechart {
+  /*width: 1000px;*/
+  border: 2px;
+}
+</style>
+<!--END THE STYLES -->
+<!-- SCRIPTS -->
+
+<script src="js/src/d3.v3.js"></script>
+<!--nv.d3-->
+<!--nv.d3 APIs-->
+<script src="js/src/nv.d3.js"></script>
+<script src="js/src/models/legend.js"></script>
+<script src="js/src/models/pie.js"></script>
+<script src="js/src/models/pieChart.js"></script>
+<script src="js/src/utils.js"></script>
+<!--nv.d3-->
+
+
+<!-- END SCRIPTS -->
+</head>
+<body>
+<div id="main-container">
+  <div id="line-top"></div>
+  <div id="header" >
+    <div id="logo-container" class="center"><a href="index.html" ></a></div>
+    <div id="menu-container">
+      <div class="hr"></div>
+      <div id="menu" class="center">
+        <ul class="sf-menu">
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="Infographic1.html">Infographic1</a></li>
+          <li><a href="Infographic2.html">Infographic2</a></li>
+          
+        </ul>
+      </div>
+      <div class="hr"></div>
+    </div>
+  </div>
+  <div id="page-title">
+    <div id="page-title-shadow"></div>
+    <div class="center">
+      <h6>Your position - Infographic2</h6>
+    </div>
+    <div id="page-title-shadow-bottom"></div>
+  </div>
+  <div id="content-container" class="center">
+    <div id="full-width">
+      <div class="blog-post">
+        <h1><a href="#text">The Pie Chart</a></h1>
+        <div class="double-hr"></div>
+        <div  class='with-3d-shadow with-transitions'>
+   		<svg id="chart" class="mypiechart"></svg>
+<script src="js/infog2.js"></script>
+
+        <p id="text">This pie chart illustrates the total life cycle cost of various projects data gathered form different US government departments(department code).</p> 
+<p>A list of different circles represents different department. This visualization is intend to allow the users which are journalists, to obtain the information about various departments’ project cost and compare any selected ones dynamically. </p> 
+<p><b>Single click </b>a certain circle in the list to check or uncheck a department, the pie chart will hide or display the corresponding portion of the data. </p>
+<p><b>Double click</b> the circle to select one department; the data graph about selected department will be displayed. </p>
+<p><b>Hover over </b>the different portion of the pie chart, the data will be displayed accordingly. </p>
+
+<p>Please note the unit of the lifecycle cost in $M and for the purpose to achieve a better illustration, this pie chart only displays the department with the cost over $1000M. </p>
+<br/>
+<h6>This graph is applied Nv3d APIs (http://nvd3.org/) and some functions are modified from the examples.</h6>
+		</div>
+    </div>
+  </div>
+  </div>
+  
+  <!-- FOOTER START -->
+  <div id="footer-container">
+    <div class="hr"></div>
+    <div id="footer-line"></div>
+    <div id="footer" class="center"></div>
+  </div>
+  <div id="copyrights" >
+    <h5 class="center" >(&copy;&copy;) 2014. Haotong Chen. hc1e13</h5>
+  </div>
+  <!-- FOOTER ENDS -->
+</div>
+<div style="display:none"></div>
+</body>
+</html>

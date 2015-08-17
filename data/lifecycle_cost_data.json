@@ -1,0 +1,55 @@
+[
+    {
+      "Agency Name and Code" : "Department of Agriculture(5)",
+      "Lifecycle Cost" : 16777.918559811988
+    },
+    {
+      "Agency Name and Code" : "Department of Commerce(6)",
+      "Lifecycle Cost" : 4066.3013750000005
+    },
+    {
+      "Agency Name and Code" : "Department of Defense(7)",
+      "Lifecycle Cost" : 30348.57368
+    },
+    {
+      "Agency Name and Code" : "Department of Health and Human Services(9)",
+      "Lifecycle Cost" : 2545.8360000000002
+    },
+    {
+      "Agency Name and Code" : "Department of Justice(11)",
+      "Lifecycle Cost" : 2299.985412
+    },
+    {
+      "Agency Name and Code" : "Department of the Treasury(15)",
+      "Lifecycle Cost" : 1612.3669320000004
+    },
+    {
+      "Agency Name and Code" : "Social Security Administration(16)",
+      "Lifecycle Cost" : 2180.336918
+    },
+    {
+      "Agency Name and Code" : "Department of Education(18)",
+      "Lifecycle Cost" : 5912.1123780000025
+    },
+    {
+      "Agency Name and Code" : "Department of Energy(19)",
+      "Lifecycle Cost" : 1286.8045419999999
+    },
+    {
+      "Agency Name and Code" : "Department of Transportation(21)",
+      "Lifecycle Cost" : 3798.197655
+    },
+    {
+      "Agency Name and Code" : "Department of Homeland Security(24)",
+      "Lifecycle Cost" : 9488.368129999997
+    },
+    {
+      "Agency Name and Code" : "Office of Personnel Management(27)",
+      "Lifecycle Cost" : 1886.34700712
+    },
+    {
+      "Agency Name and Code" : "Department of Veterans Affairs(29)",
+      "Lifecycle Cost" : 4370.630307999998
+    }
+
+]
