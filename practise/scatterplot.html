@@ -5,6 +5,7 @@
 	<title>D3 Page Template</title>
 	<script type="text/javascript" src="d3/d3.js"></script>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" type="text/css" href="axis.css">
     </head>
     <body>
 		<script type="text/javascript">
@@ -57,6 +58,14 @@
 				'font-size': '11px',
 				'fill' : 'red'
 			});
+
+			var xAxis = d3.svg.axis()
+							.scale(xScale)
+							.orient("bottom");
+
+			svg.append('g')
+				.attr('class', 'axis')
+				.call(xAxis)
 
 
     	</script>
