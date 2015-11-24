@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My First Chart</title>
+        <!-- <link href="nv.d3.css" rel="stylesheet" type="text/css"> -->
+        <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.min.js" charset="utf-8"></script>
+
+        <style>
+            #chart svg {
+              height: 400px;
+            }
+        </style>
+
+
+
+
+    </head>
+    <body>
+        <div id="chart">
+            <svg></svg>
+        </div>
+
+        <script type="text/javascript">
+        var data =  [
+                          {
+                            "label": "平台微信支付",
+                            "value" : 29.765957771107
+                          } ,
+                          {
+                            "label": "平台京东支付",
+                            "value" : 57
+                          } ,
+                          {
+                            "label": "得到微信支付",
+                            "value" : 32.807804682612
+                          } ,
+                          {
+                            "label": "得到支付宝支付",
+                            "value" : 196.45946739256
+                          } 
+                    ]
+
+
+
+        nv.addGraph(function() {
+          var chart = nv.models.pieChart()
+              .x(function(d) { return d.label })
+              .y(function(d) { return d.value })
+              .showLabels(true)     //Display pie labels
+              .labelThreshold(.05)  //Configure the minimum slice size for labels to show up
+              .labelType("percent") //Configure what type of data to show in the label. Can be "key", "value" or "percent"
+              .donut(true)          //Turn on Donut mode. Makes pie chart look tasty!
+              .donutRatio(0.35)     //Configure how big you want the donut hole size to be.
+              ;
+
+            d3.select("#chart svg")
+                .datum(data)
+                .transition().duration(350)
+                .call(chart);
+
+          return chart;
+        });
+
+        </script>
+    </body>
+</html>
